@@ -24,7 +24,8 @@ To run this project locally, follow these steps:
 
 5. **Access the Application**:
    - Open a web browser and navigate to `http://localhost:3000`.
-   - Use the provided credentials (`user@gmail.com`, `user`) to sign in.
+   - You can signup with new credentials or Use the provided credentials (`user@gmail.com`, `user`) to sign in.
+   
 
 ## Screenshots
 
