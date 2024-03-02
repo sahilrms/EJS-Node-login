@@ -11,8 +11,31 @@
 
 <body>
     <div class="container mx-auto mt-8">
-        <h1 class="text-2xl font-bold mb-4">Welcome, <%= name %>!</h1>
-        <p class="text-lg">This is your personalized home page.</p>
+        <div class="flex">
+            <h1 class="text-2xl font-bold mb-4 capitalize">Welcome, <%= name?.username %>!</h1>
+            <button class="ml-auto px-6 py-2 text-white bg-blue-600 rounded-md" onclick="window.location.href = '/logout';">Sign out</button>
+        </div>
+        
+        <p class="text-lg w-full mx-auto">This is your personalized home page.</p>
+        <div class="mt-8 border rounded-md shadow-2xl w-3/5 mx-auto p-2">
+            <h2 class="text-xl font-bold my-4 mx-auto w-max">Login Activities</h2>
+            <table class="table-auto w-full px-4 py-2">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Timestamp</th>
+                        <th class="px-4 py-2">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (let activity of loginRecord) { %>
+                        <tr>
+                            <td class="border px-4 py-2"><%= activity.timestamp %></td>
+                            <td class="border px-4 py-2"><%= activity.successful ? 'Success' : 'Failed' %></td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 

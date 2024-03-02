@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error</title>
+    <link href="/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col items-center w-screen h-screen mx-auto mt-8">
+        <h1 class="text-2xl font-bold mb-4">Oops!</h1>
+        <p class="my-8 text-2xl"><%= message %></p>
+        <a href="<%= buttonUrl %>" class="my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> <%= buttonText %></a>
+    </div>
+</body>
+</html>
