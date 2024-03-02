@@ -2,6 +2,7 @@
 const express = require("express");
 const { home, signup, signin, logout } = require('../controllers/homeControllers');
 const router = express.Router()
+const bcrypt = require('bcrypt');
 // home route
 router.get('/', home)
 

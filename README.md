@@ -1,7 +1,3 @@
-Certainly! Here's a revised version of the text formatted as a `README.md` file for your GitHub project. I've added some additional sections to provide more context and information:
-
----
-
 # Assignment Project
 
 This project is a small assignment implemented using EJS, Express.js, Node.js, and MySQL. It allows users to create new accounts and sign in using email and password credentials.
@@ -24,7 +20,7 @@ To run this project locally, follow these steps:
    - Open a terminal in VSCode and run `npm install` to install dependencies.
 
 4. **Run the Project**:
-   - Start the project by running `nodemon index.js` in the terminal.
+   - Start the project by running `nodemon index.js` or `npm run dev` in the terminal.
 
 5. **Access the Application**:
    - Open a web browser and navigate to `http://localhost:3000`.
